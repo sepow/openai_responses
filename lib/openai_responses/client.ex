@@ -1,4 +1,4 @@
-defmodule OpenAI.Responses.Client do
+fdefmodule OpenAI.Responses.Client do
   @moduledoc """
   HTTP client for the OpenAI Responses API.
 
@@ -126,8 +126,8 @@ defmodule OpenAI.Responses.Client do
           {^ref, event} ->
             {[event], task}
         after
-          # Timeout after 30 seconds of inactivity
-          30_000 ->
+          # Timeout after 90 seconds of inactivity
+          90_000 ->
             Task.shutdown(task, :brutal_kill)
             {:halt, task}
         end
