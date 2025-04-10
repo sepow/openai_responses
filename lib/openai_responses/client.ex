@@ -1,4 +1,4 @@
-fdefmodule OpenAI.Responses.Client do
+defmodule OpenAI.Responses.Client do
   @moduledoc """
   HTTP client for the OpenAI Responses API.
 
